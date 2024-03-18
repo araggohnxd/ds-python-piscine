@@ -1,4 +1,19 @@
 def ft_tqdm(iterable):
+    """
+    A simple progress bar generator function.
+
+    This function takes an iterable as input and yields each item from the
+    iterable, while printing a progress bar to the console indicating the
+    progress of the iteration. The progress bar displays the percentage
+    completion and a visual representation of the progress.
+
+    `iterable`
+        An iterable object (e.g., list, range, generator) to iterate over.
+
+    Returns:
+    Yields each item from the iterable.
+    """
+
     total = len(iterable)
 
     for i, item in enumerate(iterable, start=1):
@@ -22,12 +37,42 @@ def ft_tqdm(iterable):
 
 
 # def format_time(t):
+#     """
+#     Formats a time duration into a human-readable string representation.
+
+#     This function takes a time duration in seconds as input and formats it
+#     into a human-readable string representation of hours, minutes, and
+#     seconds. If the duration is less than an hour, it displays minutes
+#     and seconds only.
+
+#     `t`
+#         Time duration in seconds.
+
+#     Returns:
+#     A string representing the formatted time duration.
+#     """
+
 #     mins, s = divmod(int(t), 60)
 #     h, m = divmod(mins, 60)
 #     return f'{h:d}:{m:02d}:{s:02d}' if h else f'{m:02d}:{s:02d}'
 
 
 # def ft_tqdm(iterable):
+#     """
+#     A simple progress bar generator function.
+
+#     This function takes an iterable as input and yields each item from the
+#     iterable, while printing a progress bar to the console indicating the
+#     progress of the iteration. The progress bar displays the percentage
+#     completion and a visual representation of the progress.
+
+#     iterable
+#         An iterable object (e.g., list, range, generator) to iterate over.
+
+#     Returns:
+#     Yields each item from the iterable.
+#     """
+
 #     total = len(iterable)
 #     start = time.time()
 #     terminal_width = os.get_terminal_size().columns
