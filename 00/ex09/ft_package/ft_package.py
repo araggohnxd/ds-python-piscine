@@ -1,15 +1,15 @@
-def count_in_list(lst, s):
+def count_in_list(lst, item):
     """
-    Count the occurrences of `s` in list `lst`.
+    Count the occurrences of `item` in list `lst`.
 
     `lst`
         List to count the occurrences from.
 
-    `s`
+    `item`
         Pattern to look for.
 
     Returns:
     The number of found occurrences.
     """
 
-    return lst.count(s)
+    return lst.count(item)
