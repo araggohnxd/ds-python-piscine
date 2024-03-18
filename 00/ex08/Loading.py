@@ -101,3 +101,16 @@ def ft_tqdm(iterable):
 #             end='',
 #             flush=True
 #         )
+
+def main():
+    """
+    Some tests for ft_tqdm.
+    """
+
+    for _ in ft_tqdm(range(33333)):
+        pass
+    print()
+
+
+if __name__ == "__main__":
+    main()
