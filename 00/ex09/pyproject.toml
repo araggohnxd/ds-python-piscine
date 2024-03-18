@@ -19,5 +19,5 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/araggohnxd/ds-python-piscine/tree/main/00/ex09/ft_package"
+Homepage = "https://github.com/araggohnxd/ds-python-piscine/tree/main/00/ex09"
 Issues = "https://github.com/araggohnxd/ds-python-piscine/issues"
