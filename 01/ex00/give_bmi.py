@@ -22,18 +22,18 @@ def give_bmi(height: list[int | float],
 
     try:
         assert height is not None and weight is not None, \
-        "arguments must not be None"
+            "arguments must not be None"
 
         assert len(weight) == len(height), "lists differ in size"
 
         assert all(isinstance(value, (int, float)) for value in height), \
-               "list values must be either int or float"
+            "list values must be either int or float"
 
         assert all(isinstance(value, (int, float)) for value in weight), \
-               "list values must be either int or float"
+            "list values must be either int or float"
 
         assert min(height) >= 0 and min(weight) >= 0, \
-               "list values must be positive"
+            "list values must be positive"
 
         return [w / h ** 2 for w, h in zip(weight, height)]
 
@@ -58,15 +58,15 @@ def apply_limit(bmi: list[int | float], limit: int) -> list[bool]:
 
     try:
         assert bmi is not None and limit is not None, \
-               "arguments must not be None"
+            "arguments must not be None"
 
         assert all(isinstance(value, (int, float)) for value in bmi), \
-               "list values must be either int or float"
+            "list values must be either int or float"
 
         assert isinstance(limit, int), "limit must be int"
 
         assert min(bmi) >= 0 and limit >= 0, \
-               "list and limit values must be positive"
+            "list and limit values must be positive"
 
         return [value > limit for value in bmi]
 

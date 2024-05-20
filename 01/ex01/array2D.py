@@ -17,19 +17,19 @@ def slice_me(family: list, start: int, end: int) -> list:
 
     try:
         assert isinstance(family, list), \
-               "family must be a list"
+            "family must be a list"
 
         assert all(isinstance(item, list) for item in family), \
-               "family must be a list of lists"
+            "family must be a list of lists"
 
         assert isinstance(start, int), \
-               "start must be an int"
+            "start must be an int"
 
         assert isinstance(end, int), \
-               "end must be an int"
+            "end must be an int"
 
         assert all(len(item) == len(family[0]) for item in family), \
-               "lists in family differ in size"
+            "lists in family differ in size"
 
         result = family[start:end]
 
